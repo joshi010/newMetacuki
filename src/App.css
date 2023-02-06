@@ -1,11 +1,73 @@
-.App {
+h2{
+  font-size: 35px;
+  color: rgb(223, 223, 223);
+  margin-bottom: 2px;
+}
+
+p{
+  font-size: 19px;
+  color:rgba(223, 223, 223, 0.836);
+}
+
+.margin-bottom1{
+  margin-bottom: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.height-100vh{
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
+
+.card-cont{
+  display: grid;
+  grid-template-columns: repeat(5, 261px);
+  align-content: center;
+  justify-items: center;
+  gap:  10px;
+}
+
+.every-anim{
+  background-color: #212327;
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(1px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  width: 100vh;
+}
+
+.bg-cuk{
+  position: absolute;
+  left: -301px;
+  width: 500px;
+  height: 500px;
+  background-image: url('/public/images/cockcat.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotateZ(20deg);
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,26 +75,18 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 769px) {
+  .card-cont{
+    grid-template-columns: repeat(5, auto);
+    width: 100%;
+    overflow: scroll;     
   }
 }
+
+@media only screen and (max-width: 1397px) {
+  .card-cont{
+    grid-template-columns: repeat(5, 209px);
+  }
+}
+
+
