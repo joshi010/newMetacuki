@@ -1,3 +1,8 @@
+.nombre-1{
+  margin-bottom: 50px;
+  font-size: 60px;
+}
+
 h2{
   font-size: 35px;
   color: rgb(223, 223, 223);
@@ -68,6 +73,22 @@ p{
   transform: rotateZ(20deg);
 }
 
+.indent{
+  padding: 80px 0;
+}
+
+.n-bg{
+  background-color: #212327;
+}
+
+.margins{
+  margin: 50px 50px;
+}
+
+.n-bg h1{
+  color: rgb(223, 223, 223);
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

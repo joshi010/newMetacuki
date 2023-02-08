@@ -1,0 +1,6 @@
+.p-gr{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-bottom: 20%;
+}

@@ -10,11 +10,11 @@ import quest from './home-sources/question.png';
 
 
 export default function Home(){
-    const cards = [{image: '/images/cukoBad.png', title: 'Evil Cuki 😈', description: 'ss', shopUrl: 'ss'},
-    {image: '/images/cukoCheff.png', title: 'Cheff Cuki 👨‍🍳', description: 'ass', shopUrl: 'ss'},
-    {image: '/images/cukoGabacho.png', title: 'Construction Cuki 👷‍♂️', description: 'ass', shopUrl: 'ss'},
-    {image: '/images/cukoMex.png', title: 'Mexican Cuki 🌮', description: 'ass', shopUrl: 'ss'},
-    {image: '/images/cukohippie.png', title: 'Hippie Cuki ☮', description: 'ass', shopUrl: 'ss'}
+    const cards = [{image: '/images/cukoBad.png', title: 'Evil Cuki 😈', description: 'ss', shopUrl: 'shop'},
+    {image: '/images/cukoCheff.png', title: 'Cheff Cuki 👨‍🍳', description: 'ass', shopUrl: 'shop'},
+    {image: '/images/cukoGabacho.png', title: 'Construction Cuki 👷‍♂️', description: 'ass', shopUrl: 'shop'},
+    {image: '/images/cukoMex.png', title: 'Mexican Cuki 🌮', description: 'ass', shopUrl: 'shop'},
+    {image: '/images/cukohippie.png', title: 'Hippie Cuki ☮', description: 'ass', shopUrl: 'shop'}
   ];
 
 
@@ -49,7 +49,7 @@ export default function Home(){
 
 
                     </p>
-                    <a className="default">Learn More {'>'}</a>
+                    <a href='./about' className="default">Learn More {'>'}</a>
                     </div>
                 </div>
                 <div className='height-100vh hidden'>
@@ -60,11 +60,11 @@ export default function Home(){
                     <div className="card-cont">
                         {cards.map(x => {
                             return(
-                            <div className="card hidden">
+                            <div key={x.title} className="card hidden">
                             <div className="image">
-                                <img key={x.title} src={x.image} />
+                                <img src={x.image} />
                             </div>
-                            <h3 key={x.title} >{x.title}</h3>
+                            <h3>{x.title}</h3>
                             <a className="default" href={x.shopUrl}>See More {'>'}</a>
                         </div>
                             )
@@ -83,7 +83,7 @@ export default function Home(){
                                     Once you unlock all Cuki-Cards a secret Cuki will be given to you with a free t-shirt. You can exchange or sell cards that you already own, but remember, your objective is to own them all.
                                 </p>
                                 <div className="down-right">
-                                    <a href="./" className="default">Get your code {'>'}</a>                
+                                    <a href="./shop" className="default">Get your code {'>'}</a>                
                                 </div>
                             </div>
                         </div>
