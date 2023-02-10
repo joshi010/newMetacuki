@@ -29,7 +29,7 @@ export default function Home(){
                         <h2>WELCOME TO</h2>
                         <h1>METACUKI</h1>
                     </div>
-                        <button>Shop Now</button>
+                        <a className="big-disp-link" href="./shop">Shop Now</a>
                 </div>
                 <div className="back-cont top">
                     <img src={cock} />

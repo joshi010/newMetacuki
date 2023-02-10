@@ -85,7 +85,7 @@ h1{
     font-size:  15px;
 }
 
-button{
+.big-disp-link{
     all: unset;
     padding: 14px 28px;
     color: #101113;
@@ -99,7 +99,7 @@ button{
     cursor: pointer;
     z-index: 1;
 }
-button::before{
+.big-disp-link::before{
     content: "";
     position:absolute;
     width: 0%;
@@ -110,11 +110,11 @@ button::before{
     left: 0;
     z-index: -1;
 }
-button:hover{
+.big-disp-link:hover{
     color: #101113;
     transition: all 0.3s;
 }
-button:hover:before{
+.big-disp-link:hover:before{
     width: 100%;
 }
 
