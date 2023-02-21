@@ -5,16 +5,18 @@ import Home from './components/pages/home';
 import Projects from './components/pages/projects';
 import Shop from './components/pages/shop'; 
 import About from './components/pages/about';
+import Err from './components/err';
 
 function App() {
   return (
     <BrowserRouter>
       <Nav />
       <Routes>
-        <Route exact path='/' element={<Home />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/shop' element={<Shop />} />
         <Route path='/about' element={<About />} />
+        <Route exact path='/' element={<Home />} />
+        <Route path='*' element={<Err />} />
       </Routes>
     
     </BrowserRouter>

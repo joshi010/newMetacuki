@@ -1,13 +1,14 @@
 import React from "react";
+import './projects/projects.css';
 
 export default function Projects(){
     const pr = 'projects';
 
     const projects = [
-        {title: 'NFT Collection', image: './images/projects/nft.png', url: 'projects/NFT-Collection'},
-        {title: 'Monkey Translate', image: './images/projects/translate.png', url: 'projects/monkey-translate'},
-        {title: 'Mbuks', image: './images/projects/mbuks.png', url: 'projects/mbuks'},
-        {title: 'Metacuki Question', image: './images/projects/question.png', url: 'projects/question'},
+        {title: 'NFT Collection', image: './images/projects/nft.png', url: '/projects/nfts/index.html'},
+        {title: 'Monkey Translate', image: './images/projects/translate.png', url: '/projects/translate/index.html'},
+        {title: 'Mbuks', image: './images/projects/mbuks.png', url: 'https://mbuks.metacuki.com'},
+        {title: 'Metacuki Question', image: './images/projects/question.png', url: 'projects/questions/index.html'},
         {title: 'Random Name Picker', image: './images/projects/picker.png', url: 'projects/question'}
     ]
 

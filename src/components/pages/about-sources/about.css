@@ -1,6 +1,18 @@
-.p-gr{
+.fr-fr{
     display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    padding-bottom: 20%;
+    gap: 10px;
+}
+
+#lel{
+    display: flex;
+    justify-content: center;
+}
+
+#lol{
+    width: 80%;
+    height: 80%;
+}
+
+p{
+    text-align: justify;
 }

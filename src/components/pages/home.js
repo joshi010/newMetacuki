@@ -7,6 +7,7 @@ import nft from "./home-sources/nft.png";
 import translate from './home-sources/translate.png';
 import mbuk from './home-sources/mbuks.png';
 import quest from './home-sources/question.png';
+import { Link } from 'react-router-dom';
 
 
 export default function Home(){
@@ -29,7 +30,7 @@ export default function Home(){
                         <h2>WELCOME TO</h2>
                         <h1>METACUKI</h1>
                     </div>
-                        <a className="big-disp-link" href="./shop">Shop Now</a>
+                    <Link to="/shop"><a className="big-disp-link">Shop Now</a></Link>
                 </div>
                 <div className="back-cont top">
                     <img src={cock} />
@@ -96,28 +97,28 @@ export default function Home(){
                                     <img src={nft}/>
                                 </div>
                                 <h3>NFT Collection</h3>
-                                <a className="default">Go Now</a>
+                                <a className="default" href="\projects\nfts\index.html">Go Now</a>
                             </div>
                             <div className="p-card hidden">
                                 <div className="p-img-cont">
                                     <img src={translate}/>
                                 </div>
                                 <h3>Monkey Translate</h3>
-                                <a className="default">Go Now</a>
+                                <a className="default" href="\projects\translate\index.html">Go Now</a>
                             </div>
                             <div className="p-card hidden">
                                 <div className="p-img-cont">
                                     <img src={mbuk}/>
                                 </div>
                                 <h3>Mbuks</h3>
-                                <a className="default">Go Now</a>
+                                <a className="default" href="https://mbuks.metacuki.com">Go Now</a>
                             </div>
                             <div className="p-card hidden">
                                 <div className="p-img-cont">
                                     <img src={quest}/>
                                 </div>
                                 <h3>Metacuki Question</h3>
-                                <a className="default">Go Now</a>
+                                <a href="\projects\questions\index.html" className="default">Go Now</a>
                             </div>
                         </div>
                     </div>
